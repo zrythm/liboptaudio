@@ -19,6 +19,7 @@ if get_option ('tests')
   e = executable (
     'test_exe', 'test.c',
     include_directories: inc,
+    dependencies: optaudio_deps,
     link_with: optaudio,
     c_args: optaudio_cflags,
     )
