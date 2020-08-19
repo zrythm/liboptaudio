@@ -208,7 +208,7 @@ optaudio = static_library (
 
 # this is so that it can be used as a meson
 # subproject
-optaudio_dep = declare_dependency (
+liboptaudio_dep = declare_dependency (
   include_directories: inc,
   dependencies: optaudio_deps,
   link_with: optaudio)
